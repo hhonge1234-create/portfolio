@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>홍00 | 문헌정보학과 3학년</title>
-  <meta name="description" content="문헌정보학과 3학년 홍00의 자기소개 페이지입니다.">
+  <title>홍현아 | 포트폴리오</title>
+  <meta name="description" content="부산대학교 문헌정보학과 · 지식재산융합전공 홍현아의 포트폴리오입니다.">
   <meta name="theme-color" content="#f6f3ea">
 
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -14,81 +14,224 @@
 <body>
   <a class="skip-link" href="#about">본문으로 건너뛰기</a>
 
-  <main>
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="#top">홍현아</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__menu" id="nav-menu" aria-label="주요 메뉴">
+        <a href="#about">소개</a>
+        <a href="#education">학력</a>
+        <a href="#skills">역량</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#contact">연락처</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="다크 모드 전환">
+          <span class="theme-toggle__icon" aria-hidden="true"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===== 히어로 ===== -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero__inner">
-        <span class="hero__mark" aria-hidden="true"></span>
-        <p class="hero__eyebrow">문헌정보학과 3학년</p>
-        <h1 class="hero__title" id="hero-title">홍00</h1>
+        <p class="hero__eyebrow">PUSAN NATIONAL UNIVERSITY · 202406224</p>
+        <h1 class="hero__title" id="hero-title">홍현아</h1>
         <p class="hero__lead">
-          정보를 정리하는 법을 배우고,<br>
-          영화로 세상을 읽습니다.
+          정보를 <em>정리</em>하고, 지식을 <em>보호</em>하고,<br>
+          데이터로 <em>설명</em>합니다.
         </p>
         <ul class="hero__tags">
-          <li>영화 보기</li>
+          <li>문헌정보학과</li>
+          <li>지식재산융합전공</li>
+          <li>데이터 분석</li>
+          <li>기록 · 아카이빙</li>
         </ul>
         <div class="hero__actions">
-          <a class="btn-github" href="https://github.com/hhonge1234-create" target="_blank" rel="noopener noreferrer">
+          <a class="btn btn--primary" href="#projects">프로젝트 보기</a>
+          <a class="btn btn--ghost" href="https://github.com/hhonge1234-create" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
               <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path>
             </svg>
             GitHub
           </a>
-          <a class="hero__scroll" href="#about">
-            소개 보기
-            <span aria-hidden="true">↓</span>
-          </a>
         </div>
       </div>
+      <a class="hero__scroll" href="#about" aria-label="소개로 이동"><span aria-hidden="true">↓</span></a>
     </section>
 
+    <!-- ===== 소개 ===== -->
     <section class="section" id="about" aria-labelledby="about-title">
       <div class="section__inner about">
-        <div class="about__avatar" aria-hidden="true">홍00</div>
+        <div class="about__avatar reveal" aria-hidden="true">HA</div>
         <div class="about__body reveal">
+          <p class="section__label">01 · About</p>
           <h2 class="section__title" id="about-title">소개</h2>
           <p>
-            안녕하세요, 문헌정보학과 3학년 홍00입니다.
-            정보를 모으고 정리해 필요한 사람에게 연결하는 일에 관심이 있습니다.
-            학과 공부를 통해 분류와 검색, 기록 관리의 기본을 익혀 왔습니다.
+            안녕하세요, 부산대학교 <strong>문헌정보학과</strong>에서 공부하며
+            <strong>지식재산융합전공</strong>을 함께 이수하고 있는 홍현아입니다.
           </p>
           <p>
-            쉬는 시간에는 장르를 가리지 않고 영화를 보며,
-            좋은 작품은 기록으로 남겨 둡니다.
+            문헌정보학에서 정보를 분류·검색·보존하는 방법을 배우고,
+            지식재산 분야에서 그 정보가 가진 권리와 가치를 다루는 법을 익히고 있습니다.
+            두 전공을 잇는 지점, 곧 <em>“지식을 어떻게 잘 남기고, 잘 쓰이게 할 것인가”</em>가 제 관심사입니다.
           </p>
+          <p>
+            최근에는 공공 데이터를 직접 분석하고, 파이썬과 웹 기술로 결과를 시각화하는 작업에 힘을 쏟고 있습니다.
+          </p>
+          <dl class="facts">
+            <div><dt>소속</dt><dd>부산대학교</dd></div>
+            <div><dt>주전공</dt><dd>문헌정보학과</dd></div>
+            <div><dt>융합전공</dt><dd>지식재산융합전공</dd></div>
+            <div><dt>학번</dt><dd>202406224</dd></div>
+          </dl>
         </div>
       </div>
     </section>
 
-    <section class="section section--tint" id="interests" aria-labelledby="interests-title">
+    <!-- ===== 학력 ===== -->
+    <section class="section section--tint" id="education" aria-labelledby="education-title">
       <div class="section__inner">
-        <h2 class="section__title reveal" id="interests-title">관심사</h2>
+        <p class="section__label reveal">02 · Education</p>
+        <h2 class="section__title reveal" id="education-title">학력 · 전공</h2>
 
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                 stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2.5" y="4.5" width="19" height="15" rx="2"></rect>
-              <path d="M7 4.5v15M17 4.5v15M2.5 9.5h4.5M2.5 14.5h4.5M17 9.5h4.5M17 14.5h4.5"></path>
-            </svg>
-          </span>
-          <h3 class="card__title">영화 보기</h3>
-          <p class="card__text">
-            장르를 가리지 않고 영화를 봅니다.
-            인상 깊은 작품은 감상 메모로 남겨 두는 편입니다.
-          </p>
-        </article>
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__date">2024 —</span>
+            <div>
+              <h3 class="timeline__title">부산대학교 문헌정보학과</h3>
+              <p class="timeline__text">정보 조직(분류·목록), 정보 검색, 기록관리, 도서관 경영, 데이터 리터러시</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <span class="timeline__date">융합전공</span>
+            <div>
+              <h3 class="timeline__title">지식재산융합전공</h3>
+              <p class="timeline__text">특허·상표·저작권 등 지식재산 제도의 이해와 활용, 기술과 권리를 잇는 융합 역량</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== 역량 ===== -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="section__inner">
+        <p class="section__label reveal">03 · Skills</p>
+        <h2 class="section__title reveal" id="skills-title">역량</h2>
+
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2Z"/><path d="M8 7h6M8 11h6"/></svg>
+            </span>
+            <h3 class="card__title">정보 조직 · 기록</h3>
+            <p class="card__text">분류와 메타데이터 설계, 구술 기록 정리와 아카이빙</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+            </span>
+            <h3 class="card__title">지식재산</h3>
+            <p class="card__text">특허·상표·저작권 제도 이해, 지식재산 홍보 콘텐츠 기획</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg>
+            </span>
+            <h3 class="card__title">데이터 분석 · 개발</h3>
+            <p class="card__text">Python(pandas, matplotlib), Jupyter, HTML/CSS/JS, Git</p>
+          </article>
+        </div>
+
+        <ul class="skillbars reveal" aria-label="도구 숙련도">
+          <li><span>Python · pandas</span><div class="bar"><i data-level="75"></i></div></li>
+          <li><span>HTML · CSS · JavaScript</span><div class="bar"><i data-level="65"></i></div></li>
+          <li><span>데이터 시각화</span><div class="bar"><i data-level="70"></i></div></li>
+          <li><span>문서 · 기록 정리</span><div class="bar"><i data-level="85"></i></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== 프로젝트 ===== -->
+    <section class="section section--tint" id="projects" aria-labelledby="projects-title">
+      <div class="section__inner">
+        <p class="section__label reveal">04 · Projects</p>
+        <h2 class="section__title reveal" id="projects-title">프로젝트</h2>
+
+        <div class="filters reveal" role="group" aria-label="프로젝트 분류">
+          <button class="filter is-active" data-filter="all" aria-pressed="true">전체</button>
+          <button class="filter" data-filter="data" aria-pressed="false">데이터</button>
+          <button class="filter" data-filter="ip" aria-pressed="false">지식재산</button>
+          <button class="filter" data-filter="archive" aria-pressed="false">기록</button>
+          <button class="filter" data-filter="dev" aria-pressed="false">개발</button>
+        </div>
+
+        <div class="grid grid--2" id="project-list">
+          <article class="project reveal" data-category="data">
+            <p class="project__meta">데이터리터러시의 이해 · 2026</p>
+            <h3 class="project__title">부산도서관 장서–대출 데이터 분석</h3>
+            <p class="project__text">
+              도서관 정보나루의 부산도서관 장서·대출 데이터(약 66만 권)를 분석해
+              대출 집중도(로렌츠 곡선)와 수요–공급 불균형을 살피고, 도서관 운영 개선안을 제안했습니다.
+            </p>
+            <ul class="project__stack"><li>Python</li><li>pandas</li><li>matplotlib</li><li>manim</li></ul>
+            <a class="project__link" href="https://hhonge1234-create.github.io/busan-library-analysis/" target="_blank" rel="noopener noreferrer">슬라이드 보기 →</a>
+          </article>
+
+          <article class="project reveal" data-category="ip">
+            <p class="project__meta">지식재산융합전공</p>
+            <h3 class="project__title">지식재산융합전공 홍보 포스터</h3>
+            <p class="project__text">
+              전공을 처음 접하는 학생을 위해 지식재산융합전공의 교육 내용과 진로를 한눈에 보이도록
+              정리한 홍보 포스터를 HTML로 제작하고 PDF로 출력했습니다.
+            </p>
+            <ul class="project__stack"><li>HTML/CSS</li><li>Node.js</li><li>디자인</li></ul>
+          </article>
+
+          <article class="project reveal" data-category="archive">
+            <p class="project__meta">구술 기록 프로젝트</p>
+            <h3 class="project__title">「바다의 스승들」 회고록</h3>
+            <p class="project__text">
+              구술 기록지를 바탕으로 한 인물의 생애를 회고록 원고로 재구성하고,
+              웹에서 읽을 수 있는 책 형태(HTML)로 편집했습니다.
+            </p>
+            <ul class="project__stack"><li>구술사</li><li>기록관리</li><li>편집</li></ul>
+          </article>
+
+          <article class="project reveal" data-category="dev">
+            <p class="project__meta">파이썬의 이해 · 2026</p>
+            <h3 class="project__title">바이브 코딩 포트폴리오 웹사이트</h3>
+            <p class="project__text">
+              AI 코딩 도구와 함께 지금 보고 계신 포트폴리오 사이트를 만들었습니다.
+              반응형 레이아웃, 다크 모드, 스크롤 애니메이션을 적용했습니다.
+            </p>
+            <ul class="project__stack"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub</li></ul>
+            <a class="project__link" href="https://github.com/hhonge1234-create/portfolio" target="_blank" rel="noopener noreferrer">저장소 보기 →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 연락처 ===== -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="section__inner contact reveal">
+        <p class="section__label">05 · Contact</p>
+        <h2 class="section__title" id="contact-title">함께 이야기해요</h2>
+        <p class="contact__text">
+          정보·기록·지식재산·데이터에 관한 프로젝트나 스터디라면 언제든 환영합니다.
+        </p>
+        <a class="btn btn--primary" href="https://github.com/hhonge1234-create" target="_blank" rel="noopener noreferrer">GitHub에서 만나기</a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer__inner">
-      <p class="footer__name">홍00</p>
-      <div class="footer__links">
-        <p class="footer__meta">문헌정보학과 · <span id="year">2026</span></p>
-        <a class="footer__link" href="https://github.com/hhonge1234-create" target="_blank" rel="noopener noreferrer">github.com/hhonge1234-create</a>
-      </div>
+      <p>© <span id="year">2026</span> 홍현아 · 부산대학교 문헌정보학과 · 지식재산융합전공</p>
+      <a href="#top" class="footer__top">맨 위로 ↑</a>
     </div>
   </footer>
 
